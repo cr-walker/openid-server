@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "declaration": true,
+      "strict": true,
+      "alwaysStrict": true,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "noImplicitReturns": true,
+      "noImplicitAny": true,
+      "esModuleInterop": true,
+      "outDir": "build",
+      "lib": ["ES2015", "DOM"],
+      "types": ["jest"]
+  },
+  "include": ["src"],
+  "exclude": [
+      "node_modules",
+      "test"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "oidc-server",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest -i",
+    "prepublish": "yarn run build"
+  },
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Tokensoft Inc.",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^26.0.18",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2",
+    "yarn": "^1.22.10"
+  },
+  "dependencies": {
+    "jose": "2",
+    "oidc-provider": "^6.29.9",
+    "standard": "^16.0.3"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
