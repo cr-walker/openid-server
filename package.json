@@ -2,7 +2,7 @@
   "name": "oidc-server",
   "scripts": {
     "start": "node build/index.js",
-    "dev": "ts-node src/index.ts",
+    "dev": "export DEBUG=oidc-provider:* && ts-node src/index.ts",
     "build": "tsc",
     "test": "jest -i",
     "prepublish": "yarn run build"
