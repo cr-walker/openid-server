@@ -23,8 +23,7 @@
   },
   "dependencies": {
     "jose": "2",
-    "oidc-provider": "^6.29.9",
-    "standard": "^16.0.3"
+    "oidc-provider": "^6.29.9"
   },
   "jest": {
     "transform": {
